@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div id="mainbox">
+    <div id="Loginbox">
+
+        <h3>Login</h3>
+
+        <form [formGroup]="userForms" (ngSubmit)="onSubmit()">
+
+          <p class="success" [class.show]="backendMessage"  [class.success]="backendMessage== 'Login successful'" [class.error]="backendMessage!='Login successful'">{{ backendMessage }} </p>
+          
+
+
+            <input type="text" placeholder="Username" formControlName="username"><br>
+            <input type="password" placeholder="Password" formControlName="password">
+            <br>
+            <button type="submit" class="button">Login</button>
+            <p>Don't have an account? <a routerLink="../register">Register here</a></p>
+        </form>
+
+        
+
+    </div>
+
+</div>
