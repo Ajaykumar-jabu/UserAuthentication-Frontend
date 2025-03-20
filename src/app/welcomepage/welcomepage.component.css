@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bowlby+One&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fjalla+One&family=Gravitas+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+#mainbox{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+#welcomebox{
+    margin: 33vh 0 0 10vw;
+    text-align: center;
+}
+
+#welcomebox #titlebox h2{
+    margin: 0px;
+    font-family:  "Raleway", sans-serif;
+    font-size: 3.7em;
+    font-weight: 700;
+    letter-spacing: 0.5vw;
+}
+
+#descrption p{
+    max-width: 38vw;
+    margin: 0vh 0vh 0vh 0vw ;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7em;
+    font-weight: 250;
+}
+
+#formbox{
+    margin-right: 13vw;
+}
+
+
+
+/********  Responsive Adjustments For Tablets********/
+@media (max-width: 1024px) { 
+    #mainbox {
+        display: block;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    #welcomebox{
+        margin: 13vh 0 0 0vw;
+        text-align: center;
+    }
+    #welcomebox #titlebox h2{
+        margin: 0px;
+        font-family:  "Raleway", sans-serif;
+        font-size: 2.5em;
+        font-weight: 700;
+        letter-spacing: 0.5vw;
+    }
+    #descrption{
+        display: flex;
+        justify-content: center;
+    }
+    
+     #descrption p{
+        text-align: center;
+        max-width: 65vw;
+        margin: 0vh 0vh 0vh 0vw ;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.6em;
+        font-weight: 250;
+    }
+    
+    #formbox{
+        margin-right: 0vw;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/********  Responsive Adjustments For Phones********/
+@media (max-width: 475px) {  
+    #mainbox {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    #welcomebox{
+        margin: 17vh 0 0 0vw;
+        text-align: center;
+    }
+    #welcomebox #titlebox h2{
+        margin: 0px;
+        font-family:  "Raleway", sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+        letter-spacing: 0.5vw;
+    }
+    #descrption{
+        display: flex;
+        justify-content:center;
+    }
+    
+     #descrption p{
+        text-align: center;
+        max-width: 65vw;
+        margin: 0vh 0vh 0vh 0vw ;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.6em;
+        font-weight: 250;
+    }
+    
+    #formbox{
+        margin-right: 0vw;
+        display: flex;
+        justify-content: center;
+    }
+
+}
