@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fjalla+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+#mainbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+#registerbox {
+    background-color: #141414;
+    text-align: center;
+    width: 21vw;
+    height: 50.2vh;
+    border-radius: 8px;
+}
+
+#registerbox h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 2vh 0vh 1vh 0vh;
+}
+
+
+
+#registerbox form input {
+    font-family: "Poppins", sans-serif;
+    font-size: 11.5px;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5vh;
+    padding: 1.1vh;
+    width: 15vw;
+}
+#registerbox form input:focus {
+    outline: none;
+}
+#registerbox form .error {
+    color: red;
+    text-align: left;
+    font-size: 0.6em;
+    font-family: "Poppins", sans-serif;
+    margin: 0vh  0vh 0vh 5vh;
+    visibility: hidden; 
+}
+
+
+#registerbox form  .error.show {
+    visibility: visible;
+}
+
+#registerbox form .error2 {
+    height: 20px; 
+    color: rgb(225, 0, 0);
+    font-size: 0.7em;
+    font-weight: 300;
+    text-align: center;
+    margin: 0vh;
+    transition: 0.6s;
+}
+#registerbox form .success {
+    height: 20px; 
+    color: rgb(102, 173, 73);
+    font-size: 0.7em;
+    font-weight: 400;
+    text-align: center;
+    margin: 0vh;
+    transition: 0.6s;
+}
+
+
+#registerbox form button {
+    margin: 1vh;
+    padding: 0.5vh;
+    width: 5vw;
+}
+
+#registerbox form p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.85em;
+    color: rgb(227, 227, 227);
+    margin: 1vh;
+}
+
+#registerbox form p a{
+   color: rgb(134, 132, 132);
+   text-decoration: none;
+}
+
+#registerbox form p a:hover{
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+#registerbox form button{
+    padding: 5px 5px 5px 5px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#registerbox form button:hover{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {  /* Adjusts for tablets */
+
+    
+#mainbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#registerbox {
+    background-color: #141414;
+    text-align: center;
+    width: 55vw;
+    height: 43vh;
+    border-radius: 15px;
+}
+
+#registerbox h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 2vh 0vh 1vh 0vh;
+}
+
+
+#registerbox form input {
+    font-family: "Poppins", sans-serif;
+    font-size: 11.5px;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5vh;
+    padding: 1.1vh;
+    width: 35vw;
+}
+#registerbox form input:focus {
+    outline: none;
+}
+
+
+#registerbox form .error {
+    color: red;
+    text-align: left;
+    font-size: 0.6em;
+    font-family: "Poppins", sans-serif;
+    margin: 0vh  0vh 0vh 7vh;
+    visibility: hidden; 
+}
+
+
+#registerbox form  .error.show {
+    visibility: visible;
+}
+
+#registerbox form .error2 {
+    height: 20px; 
+    color: rgb(225, 0, 0);
+    font-size: 0.7em;
+    font-weight: 300;
+    text-align: center;
+    margin: 0vh;
+    transition: 0.6s;
+}
+#registerbox form .success {
+    height: 20px; 
+    color: rgb(102, 173, 73);
+    font-size: 0.7em;
+    font-weight: 400;
+    text-align: center;
+    margin: 0vh;
+    transition: 0.6s;
+}
+
+#registerbox form button {
+    margin: 1vh;
+    padding: 0.5vh;
+    width: 15vw;
+}
+
+#registerbox form p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.85em;
+    color: rgb(227, 227, 227);
+    margin: 1vh;
+}
+
+#registerbox form p a{
+   color: rgb(134, 132, 132);
+   text-decoration: none;
+}
+
+#registerbox form p a:hover{
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+
+#registerbox form button{
+    padding: 5px 5px 5px 5px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#registerbox form button:hover{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+}
+
+@media (max-width: 480px) {  /* Adjusts for tablets */
+
+    
+    #registerbox {
+        background-color: #141414;
+        text-align: center;
+        width: 70vw;                           
+        height: 50vh;                           
+        border-radius: 15px;
+    }
+    
+    #registerbox h3 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 2em;                         
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin: 2vh 0vh 1vh 0vh;
+    }
+    
+    
+    #registerbox form input {
+        font-family: "Poppins", sans-serif;
+        font-size: 11.5px;
+        border: none;
+        border-radius: 5px;
+        margin: 0.5vh;
+        padding: 1.1vh;
+        width: 49vw;                           
+    }
+    #registerbox form input:focus {
+        outline: none;
+    }
+    
+    
+    #registerbox form .error {
+        color: red;
+        text-align: left;
+        font-size: 0.6em;
+        font-family: "Poppins", sans-serif;
+        margin: 0vh  0vh 0vh 4.5vh;               
+        visibility: hidden; 
+    }
+    
+    
+    #registerbox form button {
+        margin: 0.5vh;                     
+        padding: 0.5vh;
+        width: 18vw;                       
+    }
+}

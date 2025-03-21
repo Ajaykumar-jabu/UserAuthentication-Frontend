@@ -1,1 +1,37 @@
-<p>register works!</p>
+<div id="mainbox">
+    <div id="registerbox">
+
+        <h3>Register</h3>
+
+        <form [formGroup]="userForms" (ngSubmit)="onSubmit()">
+            <p class="message" [class.show]="backendMessage" [class.success]="backendMessage=='Registration successful'"
+                [class.error2]="backendMessage!='Registration successful'">{{ backendMessage }} </p>
+
+
+            <input type="email" placeholder="Email" formControlName="email"><br>
+            <p class="error" [class.show]="userForms.get('email')?.invalid && userForms.get('email')?.touched">
+                Enter a valid email address.
+            </p>
+
+            <input type="text" placeholder="Fullname" formControlName="fullname"><br>
+            <p class="error" [class.show]="userForms.get('fullname')?.invalid && userForms.get('fullname')?.touched">
+                Enter a valid fullname.
+            </p>
+
+            <input type="text" placeholder="Username" formControlName="username"><br>
+            <p class="error" [class.show]="userForms.get('username')?.invalid && userForms.get('username')?.touched">
+                Enter a valid username.
+            </p>
+
+            <input type="text" placeholder="Password" formControlName="password"><br>
+            <p class="error" [class.show]="userForms.get('password')?.invalid && userForms.get('password')?.touched">
+                8 characters minimum with 1-9, a-z, A-Z, !&#64;#$%^&*.
+            </p>
+
+            <button type="submit" [disabled]="userForms.controls['password'].invalid" >Register</button>
+            <p>Already registered? <a routerLink="../login">Login here</a></p>
+        </form>
+
+
+
+    </div>
