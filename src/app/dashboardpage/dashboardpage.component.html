@@ -1,1 +1,21 @@
-<p>dashboardpage works!</p>
+<div id="outerbox">
+
+    <div id="header">
+  
+      <div id="titlebox">
+        <a routerLink="/dashboard/home"><span class="mdi mdi-shield-account"></span>User Manager </a> 
+      </div>
+  
+      <div id="navbox">
+        <a routerLink="/dashboard/home"> <span class="mdi mdi-home"></span>Home</a>
+        <a routerLink="/dashboard/profile"> <span class="mdi mdi-account"></span>Profile</a>
+        <a (click)="logout()" > @if(navSessionAction=="Logout"){<span class="mdi mdi-logout"></span>} @else{<span class="mdi mdi-login"></span> }{{navSessionAction}}</a>
+      </div>
+  
+    </div>
+  
+    <div id="mainbox">
+      <router-outlet></router-outlet>
+    </div>
+  
+  </div>
