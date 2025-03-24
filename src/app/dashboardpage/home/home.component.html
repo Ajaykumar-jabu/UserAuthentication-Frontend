@@ -1,1 +1,43 @@
-<p>home works!</p>
+<div id="mainbox">
+    <div id="headingbox">
+        <h1>{{greetUser()}} {{userData?.fullname ? ', ' + (userData.fullname | uppercase) : ''}}!</h1>
+        <p>Managing your profile, made simple!</p>
+    </div>
+
+    <div id="contentbox">
+
+        <div class="box">
+            <h2>ABOUT THE PROJECT</h2>
+            <p>My Full Stack User Authentication project is built using Spring Boot for the backend and Angular for the frontend. 
+                It allows users to register, log in, and access a personalized dashboard securely. The backend verifies user credentials 
+                and manages authentication logic, while the frontend provides a smooth and responsive UI. I plan to implement 
+                JWT authentication for secure session management and store user data in a MySQL database. This project showcases my 
+                ability to integrate backend and frontend technologies for a complete authentication system.Users can also view and manage 
+                their profile information on the dashboard after logging in successfully.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>PROJECT FEATURES</h2>
+            <p> The authentication system ensures secure access by verifying user credentials before granting entry to the dashboard. 
+                New users can register with unique login details, while existing ones can sign in seamlessly. Once authenticated, 
+                they can view and update their profile information, including personal details like name and email. The backend handles 
+                credential validation and session management, while the frontend provides a smooth, user-friendly experience. 
+                To enhance security, JWT authentication will be implemented, ensuring safe and reliable user sessions. 
+                The system integrates responsive design, making it accessible across different devices.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>HOW IT WORKS</h2>
+            <p>
+                The system begins with user registration, where new users provide their credentials, which are securely stored in the 
+                database. During login, the backend validates the entered credentials, ensuring they match the stored data. If 
+                authenticated, the server generates a response confirming access, allowing the user to proceed to their dashboard. 
+                Here, they can view and update their profile information in real time. The frontend dynamically updates based on user 
+                actions, creating a seamless experience. Future enhancements include JWT authentication, ensuring secure session 
+                management and protecting user data.
+            </p>
+        </div>
+    </div>
+</div>
