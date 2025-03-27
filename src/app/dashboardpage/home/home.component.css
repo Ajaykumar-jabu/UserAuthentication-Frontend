@@ -23,10 +23,8 @@
     scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;
     gap:3vw;
-    
 }
  #contentbox .box{
-
     gap:2vw;
     width:70vw;
     background-color: #141414;
@@ -48,121 +46,44 @@
     font-family: "poppins", sans-serif;
     font-weight: 250;
     text-align: justify;
- }
+}
 
-
- 
 /************ Responsive Adjustments for Laptops & Tablets***************/
 @media (max-width: 1024px) {  
-
-    #headingbox{
-        margin-top: 30vh;           
-        font-family: "Raleway", sans-serif;
-        text-align: center;
-    }
     #headingbox h1{
-        margin: 0vh;
-        font-size: 2.5em;            
+        font-size: 2.5em;
     }
     #headingbox p{
-        margin: 0vh;
-        font-size: 0.9em;         
-        font-weight: 250;
-        color: #c3bfbf;
-        font-family: "poppins", sans-serif;
+        font-size: 0.9em;
     }
-    
      #contentbox{
-        margin: 55vh 2vw 1vh 2vw;       
-        display: grid;         
+        margin: 55vh 2vw 1vh 2vw;
+        display: grid;
         justify-content: center;
-        scrollbar-width: none; 
-      -ms-overflow-style: none;
-        gap:3vw;
-        
     }
      #contentbox .box{
-    
-        gap:2vw;
-        width:93vw;                        
-        height: 23vh;                       
-        background-color: #141414;
-        border-radius: 10px;
-        padding: 5px;
+        width:93vw;
+        height: 23vh;
     }
-    
-     #contentbox .box h2{
-        font-size: 1.3em;
-        font-family: "Raleway", sans-serif;
-        font-weight: 800;
-        text-align: center;
-    }
-    
-     #contentbox .box p{
-        margin:0;
-        padding: 1vw 1vw;
-        font-size: 0.8em;
-        font-family: "poppins", sans-serif;
-        font-weight: 250;
-        text-align: justify;
-     }
-
 }
 
 /************ Responsive Adjustments for Phone***************/
 @media (max-width: 480px) {  
-
-    #headingbox{
-        margin-top: 30vh;
-        font-family: "Raleway", sans-serif;
-        text-align: center;
-    }
-    #headingbox h1{              
-        margin: 0vh;
+    #headingbox h1{
         font-size: 2.8em;
     }
-    #headingbox p{               
-        margin: 0vh;
+    #headingbox p{
         font-size: 0.8em;
-        font-weight: 250;
-        color: #c3bfbf;
-        font-family: "poppins", sans-serif;
     }
-    
-     #contentbox{               
-        margin: 48vh 2vw 1vh 2vw;           
+     #contentbox{
+        margin: 48vh 2vw 1vh 2vw;
         display: grid;
         justify-content: center;
-        scrollbar-width: none; 
-      -ms-overflow-style: none;
-        gap:4vh;        
-        
+        gap:4vh;
     }
-     #contentbox .box{               
-    
+     #contentbox .box{
         gap:2vh;
         width:93vw;
         height: 33vh;
-        background-color: #141414;
-        border-radius: 10px;
-        padding: 5px;
     }
-    
-     #contentbox .box h2{
-        font-size: 1.3em;
-        font-family: "Raleway", sans-serif;
-        font-weight: 800;
-        text-align: center;
-    }
-    
-     #contentbox .box p{
-        margin:0;
-        padding: 1vw 1vw;
-        font-size: 0.8em;
-        font-family: "poppins", sans-serif;
-        font-weight: 250;
-        text-align: justify;
-     }
-    
-
 }
