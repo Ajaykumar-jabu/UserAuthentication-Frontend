@@ -1,1 +1,87 @@
-<p>profile works!</p>
+<div id="mainbox">
+
+    <div id="profilebox">
+
+        <div id="picturebox">
+
+            <div id="imgbox">
+                <img src="https://static.vecteezy.com/system/resources/previews/036/280/650/non_2x/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg"
+                    alt="profile picture" width="250" height="250">
+            </div>
+
+        </div>
+
+        <div id="databox">
+
+
+            @if(userData==null)
+            {
+            <div id="loginbox">
+                <button (click)="navToLogin()">Login➝</button>
+            </div>
+            }
+
+            @else if(isEditabled==false)
+            {
+            <div id="innerdatabox">
+
+                <p id="fullname"> {{userData.fullname}}</p>
+                <p class="lowerdata"> <span class="mdi mdi-account"></span>{{userData.username}} </p>
+                <p class="lowerdata"> <span class="mdi mdi-email"></span>{{ userData.email}}</p>
+                <p class="lowerdata"> <span class="mdi mdi-map-marker"></span>{{userData.location}}</p>
+                <p id="bio"> <span class="mdi mdi-pencil-circle"></span>{{userData.bio}}</p>
+
+
+            </div>
+            }
+            @else
+            {
+            <div id="innerdatabox2">
+
+                <form [formGroup]="userData2">
+
+                    <input type="text" id="fullname" formControlName="fullname" placeholder="Full Name" [value]="userData?.fullname"/><br>
+
+                    <input type="text" class="lowerdata" formControlName="username" placeholder="Username" [value]="userData?.username"/><br>
+
+                    <input type="email" class="lowerdata" formControlName="email" placeholder="Email" [value]="userData?.email" /><br>
+
+                    <input type="text" class="lowerdata" formControlName="location" placeholder="Location" [value]="userData?.location" /><br>
+
+                    <input type="text" id="bio" formControlName="bio" placeholder="Add bio" [value]="userData.bio"/>
+
+                </form>
+              
+
+
+            </div>
+            }
+            <div id="editbox">
+                @if(userData==null)
+                {
+
+                }
+
+                @else if(isEditabled==false)
+                {
+                <button (click)="editProfile()">Edit</button>
+                }
+                @else
+                {
+                <button (click)="editProfile()">Back</button>
+                <button (click)="saveUser(); editProfile()">Save</button>
+                }
+            </div>
+
+            <div id="messagebox">
+                
+                
+                <p [class.show]="backendMessage">{{backendMessage}}</p>
+            
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
